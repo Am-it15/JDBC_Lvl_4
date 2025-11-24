@@ -23,6 +23,7 @@ public class Main {
 
                 switch (choice) {
                     case 1 -> NewStud.addStd(con, scan);
+                    case 2 -> RetrieveStd.rtvMenu(con, scan);
                     default -> System.out.println("\n> Enter valid choice");
                 }
             }
