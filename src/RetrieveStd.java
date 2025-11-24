@@ -14,7 +14,8 @@ public class RetrieveStd {
             System.out.println("3 :: Return to main menu ");
             System.out.print("Enter you retrieve choice :: ");
             if(!sc.hasNext()) {
-                System.out.println("Enter Number only");
+                System.out.println("Enter Numbe" +
+                        "r only");
                 sc.next();
                 continue;
             }

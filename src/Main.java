@@ -24,7 +24,9 @@ public class Main {
                 switch (choice) {
                     case 1 -> NewStud.addStd(con, scan);
                     case 2 -> RetrieveStd.rtvMenu(con, scan);
-                    case 3 ->UpdateStud.updStd(con, scan);
+                    case 3 -> UpdateStud.updStd(con, scan);
+                    case 4 -> RemoveStud.rmStd(con, scan);
+                    case 5 -> Exit();
                     default -> System.out.println("\n> Enter valid choice");
                 }
             }
@@ -34,11 +36,16 @@ public class Main {
 
     }
 
+    private static void Exit() {
+        System.out.println("Bye Bye 👋👋....");
+        System.exit(0);
+    }
+
     private static void stdMenu() {
         System.out.println("1: New Student");
         System.out.println("2: View Student");
         System.out.println("3: Update Student");
         System.out.println("4: Remove Student");
-        System.out.println("4: Exit");
+        System.out.println("5: Exit");
     }
 }
